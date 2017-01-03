@@ -1,1 +1,11 @@
 <h1>Home</h1>
+<div>
+    <a routerLink="/something" routerLinkActive="active">
+        <img src="//d32znywta9rkav.cloudfront.net/image/drone-video-thumbnail?image=airvuz-drone-video/ffc51ac0c0a1ee2dc3d22aa7a83ef601/bd345091d075bec9f3f9f402991b8364.jpg">
+    </a>
+    <ul>
+        <li *ngFor="let car of carList">
+            {{car.car}}
+        </li>
+    </ul>
+</div>
