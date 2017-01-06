@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import * as videojs from 'video.js';
-declare var videojs:VideoJSStatic;
+import * as videojs from 'video.js'
+
 
 @Component({
     selector: 'something',
@@ -11,7 +11,8 @@ export class SomethingComponent implements OnInit, OnDestroy {
 
     ngOnInit() {
         videojs('video-player', {
-            controls: true
+            controls: true,
+            autoplay: true
         }, ()=> {});
     }
 
