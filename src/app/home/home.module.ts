@@ -4,16 +4,18 @@ import { CommonModule }    from '@angular/common';
 
 //code imports
 import { HomeRoutingModule }  from './home.routing';
-import { HomeComponent     }  from './home.component';
+import { init     }  from './home.component';
 import { carService        }  from '../services/carService';
+import {ButtonModule} from '../shared_components/button/button.module'
 
 @NgModule({
   imports: [
     HomeRoutingModule,
-      CommonModule
+    CommonModule,
+    ButtonModule
   ],
   exports: [],
-  declarations: [HomeComponent],
+  declarations: [init],
   providers: [carService],
 })
 export class HomeModule { }
