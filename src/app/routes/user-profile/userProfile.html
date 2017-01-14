@@ -1,9 +1,9 @@
 <h1>User Profile</h1>
 <input placeholder="username">
-<!--<button-1 (click)="use code from user profile class"></button-1>-->
 <p>this will alert 1</p>
-<button-1 [buttonName]="'button1'" (click)="profileClick1();"></button-1>
+<button-comp (click)="profileClick1($event)"></button-comp>
+<p>this should show because of event emitter</p>
 <p>this will alert 2</p>
-<button-1 [buttonName]="'button2'" (click)="profileClick2()"></button-1>
+<button-comp (click)="profileClick2(this)" [event-listen]="'something'"></button-comp>
 <p>this will alert 3</p>
-<button-1 [buttonName]="'button3'" (click)="profileClick3()"></button-1>
+<button-comp (emitEvent)="profileClick3($event)" [event-listen]="'button-click'"></button-comp>

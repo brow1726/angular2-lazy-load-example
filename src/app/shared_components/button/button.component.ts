@@ -1,15 +1,22 @@
-import {Component} from '@angular/core';
+import {Component, Output, EventEmitter} from '@angular/core';
 
 @Component({
-    selector: 'button-1',
-    template:`<button>{{buttonName}}</button>`
+    selector: 'button-comp',
+    template:`<button (click)="clicked(this, $event)">click</button>`
 })
-
 export class ButtonComponent {
-    constructor() { }
-    get buttonName(): string {return 'click me'};
+    @Output() emitEvent: EventEmitter<any> = new EventEmitter();
+    constructor() {
 
-    clicked() {
-        console.log('something')
+    }
+
+    clicked(comp: {}, event: {functions: {}}) {
+        event.functions = comp;
+        this.emitEvent.emit(event);
     };
+
+    someOtherFunction() {
+        console.log(this);
+        alert('emitted whole object');
+    }
 }

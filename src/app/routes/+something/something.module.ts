@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {NewModule} from '../+new/new.module';
+import {NewModule} from '../../shared_components/+new/new.module';
 
 import {SomethingRoutingModule} from './something.routing';
 

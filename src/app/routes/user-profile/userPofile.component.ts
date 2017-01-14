@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {ButtonComponent} from "../../shared_components/button/button.component";
 
 @Component({
     selector: 'user-profile',
@@ -7,24 +6,25 @@ import {ButtonComponent} from "../../shared_components/button/button.component";
 })
 
 export class userProfileComponent implements OnInit {
-    private Something = new ButtonComponent();
     constructor() { }
 
     ngOnInit() {
         console.log('loaded user Profile page');
     }
 
-    profileClick1() {
-        alert('clicked on profile button 1');
-        this.Something.clicked();
-    }
-
-    profileClick2() {
-        alert('clicked on profile button 2')
+    profileClick1(event: {srcElement : any}) {
 
     }
 
-    profileClick3() {
-        alert('clicked on profile button 3')
+    profileClick2(x) {
+        console.log(x);
+        console.log(this);
+
+    }
+
+    profileClick3(event : {functions : {someOtherFunction: ()=> void}}) {
+        console.log(event);
+        console.log(event.functions);
+        event.functions.someOtherFunction();
     }
 }

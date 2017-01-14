@@ -5,14 +5,19 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing'; 
 
-import { HomeModule } from './home/home.module';
+import { HomeModule } from './routes/home/home.module';
+
+import {HeaderModule} from './shared_components/header/header.module';
+import {FooterModule} from './shared_components/footer/footer.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    HeaderModule,
+    FooterModule
   ],
   declarations: [AppComponent],
   providers: [],

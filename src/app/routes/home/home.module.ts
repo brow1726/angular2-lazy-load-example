@@ -5,15 +5,10 @@ import { CommonModule }    from '@angular/common';
 //code imports
 import { HomeRoutingModule }  from './home.routing';
 import { init     }  from './home.component';
-import { carService        }  from '../services/carService';
-import {ButtonModule} from '../shared_components/button/button.module'
+import { carService        }  from '../../services/carService';
 
 @NgModule({
-  imports: [
-    HomeRoutingModule,
-    CommonModule,
-    ButtonModule
-  ],
+  imports: [HomeRoutingModule, CommonModule],
   exports: [],
   declarations: [init],
   providers: [carService],

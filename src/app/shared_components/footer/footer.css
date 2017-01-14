@@ -1,0 +1,87 @@
+#footer li {
+    text-transform: uppercase;
+}
+#footer li a {
+    color: #fff;
+    font-weight: 300;
+}
+#footer .social-media {
+    color: #0ab7ff;
+    font-size: 15px;
+}
+#footer .social-media a {
+    font-size: 30px;
+    color: #0ab7ff;
+}
+
+#footer .social-media a:hover {
+    color: #fff;
+}
+
+.footer-sub2 .list-inline li {
+    display: block;
+    border-right: none;
+}
+
+.footer-sub1 {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 0 0;
+}
+.footer-sub1 ul.list-unstyled {
+    text-align: center;
+}
+.footer-sub1.text-center {
+    padding: 0;
+}
+.footer-sub1.is-login .footer-signup {
+    display: none;
+}
+
+.footer-sub1.is-login .col-sm-6 {
+    width: 100%;
+}
+.footer-sub1.is-login .col-sm-6 ul.list-unstyled {
+    text-align: center;
+}
+.footer-sub1 .footer-signup {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer-sub1 .footer-signup button {
+    margin: 15px auto;
+    display: block;
+}
+
+.footer-sub2 {
+    background-color: #000;
+}
+
+.footer-sub2 ul {
+    list-style-type: none;
+}
+
+.footer-sub2 ul li {
+    border-right: 1px solid #fff;
+    padding: 0 15px;
+    margin: 10px 0 0;
+}
+
+#footer .footer-sub2 ul li {
+    border-right: 1px solid #fff;
+    display: inline-block;
+}
+#footer .footer-sub2 ul li:last-child {
+    border-right: none;
+}
+.footer-sub1 ul.list-unstyled {
+    text-align: left;
+}
+.footer-sub1 .footer-signup {
+    text-align: right;
+}
+.footer-sub1 .footer-signup button {
+    margin: 0 0 0 15px;
+    display: inline-block;
+}
